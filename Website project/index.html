@@ -3,35 +3,56 @@
 <html lang="en">
 
     <head>
+        <!-- connecting with fonts for the texts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>Personal Links</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
     </head>
 
     <body>
-        <img src="" alt="Profile Picture">
-        <h1>Maria Carneiro</h1>
-        <p>Computer Science student at Minerva University</p>
 
-        <ul>
-            <li>
-                <!--
-                    target="_blank" makes you open a NEW page after clicking on the link
-                -->
-                <a href="https://github.com/mariaeduardatc" 
-                target="_blank">Github</a>
-            </li>
+        <div class="container"> <!-- generic box so it's easier to format-->
 
-            <li>
-                <a href="https://www.linkedin.com/in/mariacarneirotc/" 
-                target="_blank">LinkedIn</a>
-            </li>
-        </ul>
+            <img 
+            class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQGwXD1BNywVvw/profile-displayphoto-shrink_800_800/0/1590686977134?e=1662595200&v=beta&t=SDgUU_i8-eTszw0YlKlBBCZybVsKyaGXa_eA61RZRaM" 
+            alt="Profile Picture"
+            />
 
-        <footer>
-            Email: mariacarneiro@uni.minerva.edu
-        </footer>
+            <h1>Maria Carneiro</h1>
+            
+            <p class="description">Computer Science student at Minerva University</p>
+
+            <ul>
+                <li>
+                    <!--
+                        target="_blank" makes you open a NEW page after clicking on the link
+                    -->
+                    <a href="https://github.com/mariaeduardatc" 
+                    target="_blank">Github</a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/mariacarneirotc/" 
+                    target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+
+            <footer>
+                Email: mariacarneiro@uni.minerva.edu
+            </footer>
+
+        </div>
+
+
     </body>
 
 </html>
