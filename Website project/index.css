@@ -86,7 +86,124 @@ ul li a{
     display: flex; /* we are focerfully changing the type of display */
     align-items: center;
     justify-content: center;
-    height: 53px;
+    height: 53px;/* quando há duas ou mais declaracões iguais a 
+    última será a mais relevante
+    
+    body{
+        background: red;
+    }
+    
+    body{
+        background: blue;
+    }
+    
+    we'll have the blue here
+    
+    
+    declarations have different weights (specifity)
+    #id is heavier than class which is heavier than an element
+    
+    
+    
+    */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* everything we change will be referenced to the box and not its content etc */
+        /* the navegador automatically adds some properties to the elements
+        on the page, zeroing them with "*" (universal) means we have the freedom to adjust 
+        the elements ourselves */
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    body{
+        background: #edf2ff;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .container{
+        text-align: center;
+        width: 300px;
+        margin: 60px auto; /* 60px for up and down and auto for sides */
+    }
+    
+    img {
+        width: 100% /* means the image will be relative to the box it is contained */
+    }
+    
+    img.avatar{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        padding: 4px;
+        border: #4263eb solid 4px;
+    }
+    
+    h1{
+        font-size: 32px;
+        color:#00082F;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .description{
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 100;
+        color: #00082F;
+        opacity: 0.8;
+        font-size: 12px;
+    
+    }
+    
+    ul{
+        list-style: none;
+        margin: 48px 0px;
+    }
+    
+    
+    ul li a{
+        /* have what is called "display inline" so it does not receive height margin etc properties
+         */
+        display: flex; /* we are focerfully changing the type of display */
+        align-items: center;
+        justify-content: center;
+        height: 53px;
+        border: 1px solid #4263eb;
+        background: #edf2ff;
+        color: white;
+        
+        
+        text-transform: uppercase;
+        font-size: 14px;
+    
+        margin-bottom: 16px;
+        border-radius: 6px;
+    
+        transition: background 400ms; /* makes transition when we are hovering with the mouse smoother*/
+    }
+    
+    /* pseudo-class */
+    ul li a:hover{
+        background: #364fc7;
+    }
+    
+    footer.email a{
+        font-weight: 500;
+        font-size: 12px;
+        color: #00082F;
+        opacity: 0.6;
+    
+        transition: opacity 400ms;
+    }
+    
+    
+    footer.email a:hover{
+        opacity: 1;
+    }
     border: 1px solid #4263eb;
     background: #4263eb;
     
