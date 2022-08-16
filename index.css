@@ -34,6 +34,9 @@ html{
     --text-color: #00082F;
     --button-color: #d7dcf7;
     --button-dark-color: #b2bdfa;
+    --portfolio-background: whitesmoke;
+    --portfolio-text:var(--button-color)
+    --portfolio-button:var(--text-color)
 }
 
 
@@ -111,7 +114,7 @@ ul li a:hover{
     background: var(--button-dark-color);
 }
 
-footer.email a{
+footer, .email a{
     font-weight: 500;
     font-size: 12px;
     color: var(--text-color);
@@ -123,4 +126,27 @@ footer.email a{
 
 footer.email a:hover{
     opacity: 1;
+}
+
+
+/* PORTFOLIO */
+
+body{
+    background: var(--portfolio-background);
+}
+
+img.avatares{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+    border: black solid 4px;
+}
+
+ul.button li a{
+    background: black;
+}
+
+ul.button li a:hover{
+    background: rgb(87, 87, 87);
 }
